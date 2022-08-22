@@ -11,22 +11,29 @@ In this repository is code that takes Javascript UFO sighting data and puts it i
 
 #### FILTER SEARCH FORM 
 This section is made of five fields the user can enter information into with placeholders hinting how the text should be entered in order to properly filter the table to the right.  Unfiltered fields show as a dark grey text and fields with user input are shown in black text.
-ENTER FILTER_SEARCH IMAGE
+
+![filter_search](https://user-images.githubusercontent.com/102555125/186039636-663e406c-d77e-4bf8-bf1f-f82d45024e79.png)
+
 
 #### DATA TABLE
 This section, by default, shows the entire data set and will filter down according to the criteria entered in the boxes in the Filter Search form.  It will clear out filter criteria and display the whole dataset upon visiting the page for the first time, refreshing the whole page, clicking on the "UFO Sightings" text at the very top of the page, or deleting input and pressing the enter key.
-ENTER TABLE IMAGE
+
+![unfiltered_table](https://user-images.githubusercontent.com/102555125/186039665-11a1fe87-8d8f-4667-8e74-7abe36bdbe39.png)
+
 
 #### WORKING WITH THE FILTERS
 - In order to filter the information in the table, criteria must be entered in exactly the same way as the placeholder text: everything in lower case and the date in a format that doesn't use leading zeroes on the month or day.  
 - Not all filters need to be filled in as this table filters one at a time, triggered by pressing enter or tabbing through the fields after entering the criteria, or clicking into a new field.  The table will filter further by each individual criteria as you move to another field.  
 - All filters are limited to one criteria so multiple cannot be searched for at the same time (for example: you can search for circle or light individually, but not circle AND light).
-ENTER FILTERED_TABLE IMAGE
+
+![filtered_table](https://user-images.githubusercontent.com/102555125/186039675-f1473a90-4e9b-437e-b294-23371057e22b.png)
+
 
 
 
 ## Summary
-One drawback of this design is that it is very sensitive to how a user inputs the search criteria and assumes the user knows how to use this form.  If a user inputs "CA" instead of "ca" or "01/10/2010" instead of "1/10/2010" the filter will not recognize it and return a blank table.  This could be frustrating for a user and lead them to believe that there is no data for their search criteria.  There is also no recognizable filter button or directions to press Enter or Tab after entering the criteria.  This could cause a user to just sit there after entering their criteria, confused as to why nothing is happening.
+One drawback of this design is that it is very sensitive to how a user inputs the search criteria and assumes the user knows how to use this form.  If a user inputs "CA" instead of "ca" or "01/10/2010" instead of "1/10/2010" the filter will not recognize it and return a blank table (see image below).  This could be frustrating for a user and lead them to believe that there is no data for their search criteria.  There is also no recognizable filter button or directions to press Enter or Tab after entering the criteria.  This could cause a user to just sit there after entering their criteria, confused as to why nothing is happening.
+![case_sensitive](https://user-images.githubusercontent.com/102555125/186039708-0126770a-616f-4f45-99aa-e6de9c5f069c.png)
 
 Another drawback is the lack of ability for the user to contact the writer of the section explaining the data.  The very last sentence of the article reads, "Dig through the data yourself, and let us know what you see."  This implies that reactions and comments are welcomed, yet there is nowhere on the website to leave a comment or contact the writer.
 
